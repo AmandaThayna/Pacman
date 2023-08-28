@@ -94,19 +94,11 @@ let onGhostCollision = () => {
     lives--;
     restartPacmanAndGhosts();
     if (lives == 0) {
-        gameOver();
     }
 };
 
-let gameOver = () => {
-     drawGameOver();
-    clearInterval(gameInterval);
 }
 
-let drawGameOver = () => {
-    canvasContext.font = "20px Emulogic";
-    canvasContext.fillStyle = "white";
-    canvasContext.fillText("Game Over !", 150, 200);
 }
 
 let update = () => {
