@@ -93,9 +93,13 @@ let restartPacmanAndGhosts = () => {
 let onGhostCollision = () => {
     lives--;
     restartPacmanAndGhosts();
-    if (lives == 0) {
+    if (lives == 0) 
+        gameOver(); {
     }
 };
+
+let gameOver = () =>{
+    clearInterval(gameInterval);
 
 let update = () => {
     pacman.moveProcess();
@@ -125,7 +129,7 @@ let drawFoods = () => {
 let drawRemainingLives = () => {
     canvasContext.font = "20px Emulogic";
     canvasContext.fillStyle = "white";
-    canvasContext.fillText("Lives: ", 220, oneBlockSize * (map.length + 1));
+    canvasContext.fillText("Lives: ", 220, oneBlockSize * (map.length + 1) +10 );
 
     for (let i = 0; i < lives; i++) {
         canvasContext.drawImage(
@@ -135,7 +139,7 @@ let drawRemainingLives = () => {
             oneBlockSize,
             oneBlockSize,
             350 + i * oneBlockSize,
-            oneBlockSize * map.length + 10,
+            oneBlockSize * map.length + 5,
             oneBlockSize,
             oneBlockSize
         );
