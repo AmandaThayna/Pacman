@@ -99,8 +99,8 @@ let onGhostCollision = () => {
 };
 
 let gameOver = () =>{
+     drawGameOver();
     clearInterval(gameInterval);
-    drawGameOver()
 }
 
 let drawGameOver = () => {
