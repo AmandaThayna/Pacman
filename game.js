@@ -93,12 +93,12 @@ let restartPacmanAndGhosts = () => {
 let onGhostCollision = () => {
     lives--;
     restartPacmanAndGhosts();
-    if (lives == 0) 
-        gameOver(); {
+    if (lives == 0) {
+        gameOver();
     }
 };
 
-let gameOver = () =>{
+let gameOver = () => {
      drawGameOver();
     clearInterval(gameInterval);
 }
