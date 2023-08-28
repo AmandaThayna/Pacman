@@ -139,7 +139,7 @@ let drawRemainingLives = () => {
             oneBlockSize,
             oneBlockSize,
             350 + i * oneBlockSize,
-            oneBlockSize * map.length + 5,
+            oneBlockSize * map.length + 10,
             oneBlockSize,
             oneBlockSize
         );
