@@ -100,6 +100,13 @@ let onGhostCollision = () => {
 
 let gameOver = () =>{
     clearInterval(gameInterval);
+    drawGameOver()
+}
+
+let drawGameOver = () => {
+    canvasContext.font = "20px Emulogic";
+    canvasContext.fillStyle = "white";
+    canvasContext.fillText("Game Over !", 200, 200);
 
 let update = () => {
     pacman.moveProcess();
