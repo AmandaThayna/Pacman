@@ -206,7 +206,7 @@ class Ghost {
         }
         if (
             poped.y - 1 >= 0 &&
-            poped.y - 1 < numOfColumns &&
+            poped.y - 1 < numOfRows &&
             mp[poped.y - 1][poped.x] != 1
         ) {
             let tempMoves = poped.moves.slice();
@@ -215,7 +215,7 @@ class Ghost {
         }
         if (
             poped.y + 1 >= 0 &&
-            poped.y + 1 < numOfColumns &&
+            poped.y + 1 < numOfRows &&
             mp[poped.y + 1][poped.x] != 1
         ) {
             let tempMoves = poped.moves.slice();
