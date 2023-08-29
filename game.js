@@ -29,7 +29,7 @@ let score = 0;
 let ghosts = [];
 let wallSpaceWidth = oneBlockSize / 1.6;
 let wallOffset = (oneBlockSize - wallSpaceWidth) / 2;
-let wallInnerColor = "black";
+let wallInnerColor = "pink";
 
 // agora criamos o mapa das paredes,
 // se 1 parede, se 0 não é parede
