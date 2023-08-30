@@ -174,7 +174,7 @@ let drawWalls = () => {
                     i * oneBlockSize,
                     oneBlockSize,
                     oneBlockSize,
-                    "7f2d78"
+                    "#b44496"
                 );
                 if (j > 0 && map[i][j - 1] == 1) {
                     createRect(
